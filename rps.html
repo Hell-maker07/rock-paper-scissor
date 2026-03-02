@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="rps.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Rock Paper Scissors</h1>
+            <p class="subtitle">You vs Computer</p>
+        </header>
+        <div class="scoreboard">
+            <div class="score-block">
+                <span class="score-label">You</span>
+                <span class="score-value" id="user-score">0</span>
+            </div>
+            <span class="score-divider">—</span>
+            <div class="score-block">
+                <span class="score-label">Computer</span>
+                <span class="score-value" id="computer-score">0</span>
+            </div>
+        </div>
+
+        <!-- Battle Display -->
+        <div class="battle">
+            <div class="battle-side">
+                <span class="battle-label">You</span>
+                <span class="battle-emoji" id="user-emoji">🤔</span>
+            </div>
+            <span class="battle-vs">VS</span>
+            <div class="battle-side">
+                <span class="battle-label">CPU</span>
+                <span class="battle-emoji" id="cpu-emoji">🤖</span>
+            </div>
+        </div>
+        <section>
+            <button id="rock">
+                <span class="btn-emoji">🪨</span>
+                Rock
+            </button>
+            <button id="paper">
+                <span class="btn-emoji">📄</span>
+                Paper
+            </button>
+            <button id="scissor">
+                <span class="btn-emoji">✂️</span>
+                Scissors
+            </button>
+        </section>
+        <h2 id="result">Pick your move!</h2>
+        <button id="reset-btn">↺ Reset Score</button>
+    </main>
+
+    <script src="rps.js"></script>
+</body>
+
+</html>
